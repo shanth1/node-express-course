@@ -4,10 +4,10 @@ const people = [
     { id: 3, name: "Bob" },
 ];
 
-const product = [
+const products = [
     { id: 1, type: "food" },
     { id: 2, type: "drink" },
     { id: 3, type: "movie" },
 ];
 
-module.exports = { product, people };
+module.exports = { products, people };
