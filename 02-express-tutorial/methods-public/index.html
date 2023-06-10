@@ -9,13 +9,16 @@
 </head>
 <body>
     <H1 class="home">Home page</H1>
-    <form action="/login" method="post">
-        <h3>Authorization</h3>
-        <div>
-            <label >Enter login:</label>
-            <input name="login" type="text">
-        </div>
-        <input type="submit" />
-    </form>
+    <div id="people"></div>
+    <h3>Authorization</h3>
+    <div>
+        <label >Enter login:</label>
+        <input name="login" id="login" type="text">
+    </div>
+    <button id="btn" >Insert</button>
+    <h5 id="info"></h5>
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./script.js"></script>
 </html>
