@@ -17,6 +17,10 @@ app.get("/api/people", (req, res) => {
     res.status(200).json({ success: true, data: people });
 });
 
+app.get("/api/postman/people", (req, res) => {
+    res.status(200).json({ success: true, data: people, toPostman: true });
+});
+
 app.post("/api/people", (req, res) => {
     const { login } = req.body;
     if (login) {
