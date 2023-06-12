@@ -46,22 +46,6 @@ app.put("/api/people/:id", (req, res) => {
     res.status(200).send({ success: true, data: newPeople });
 });
 
-app.delete("/api/people/:id", (req, res) => {
-    const { id } = req.params;
-
-    const personIndex = people.findIndex((person) => person.id === Number(id));
-    const selectedPerson = people[personIndex];
-
-    if (!selectedPerson) {
-        return res
-            .status(404)
-            .json({ success: false, msg: `No person with id ${id}` });
-    }
-
-    people.splice(personIndex, 1);
-    res.status(200).send({ success: true, data: people });
-});
-
 app.get("*", (req, res) => {
     res.send("<h1>Not found</h1>");
 });
