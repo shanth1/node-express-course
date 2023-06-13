@@ -1,5 +1,5 @@
 const express = require("express");
-const { product, people } = require("../data");
+const { product, people } = require("./data");
 
 const app = express();
 
